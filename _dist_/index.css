@@ -1,0 +1,49 @@
+@import "../_snowpack/pkg/tailwindcss/dist/base.css";
+@import "../_snowpack/pkg/tailwindcss/dist/components.css";
+@import "../_snowpack/pkg/tailwindcss/dist/utilities.css";
+
+#app{
+    display: grid;
+    grid-template-columns: repeat(2, 500px);
+    gap: 20px;
+    margin: 25px 0 0 25px;
+    place-content: center;
+}
+
+.recuadros{
+    background-color: white;
+    position: relative;
+    width: 500px;
+    height: 150px;
+    display: block;
+    border: 20px;
+    margin: 20px;
+    border-radius: 20px;
+}
+
+.recuadros:hover{
+    background-color: whitesmoke;
+}
+
+.recuadros img {
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    width: 140px;
+    height: 140px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.title{
+    position: absolute;
+    right: 10px;
+    margin-top: 15px;
+    margin-left: 10px;
+    font-weight: 500;
+}
+.price{
+    position: absolute;
+    top: 50px;
+    right: 30px;
+}
